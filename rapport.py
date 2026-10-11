@@ -1,5 +1,5 @@
 """
-rapport-auto — Génère un rapport Excel mis en forme à partir d'un export CSV
+sales-report-mailer — Génère un rapport Excel mis en forme à partir d'un export CSV
 de ventes, puis l'envoie (optionnellement) par email.
 
 Usage :

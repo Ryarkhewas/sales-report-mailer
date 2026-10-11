@@ -1,4 +1,4 @@
-# rapport-auto
+# sales-report-mailer
 
 **Transforme un export CSV de ventes en rapport Excel prêt à présenter, et l'envoie par email automatiquement.**
 
@@ -17,8 +17,8 @@ Beaucoup de petites entreprises passent une demi-journée par mois à copier-col
 ## Installation
 
 ```bash
-git clone https://github.com/Ryarkhewas/rapport-auto.git
-cd rapport-auto
+git clone https://github.com/Ryarkhewas/sales-report-mailer.git
+cd sales-report-mailer
 python -m venv .venv
 source .venv/bin/activate      # Windows : .venv\Scripts\activate
 pip install -r requirements.txt
@@ -63,7 +63,7 @@ Avec Gmail, utilisez un **mot de passe d'application** (Compte Google → Sécur
 **Linux / macOS (cron)** — chaque 1er du mois à 8 h :
 
 ```cron
-0 8 1 * * cd /chemin/vers/rapport-auto && .venv/bin/python rapport.py /chemin/export.csv --envoyer
+0 8 1 * * cd /chemin/vers/sales-report-mailer && .venv/bin/python rapport.py /chemin/export.csv --envoyer
 ```
 
 **Windows** : Planificateur de tâches → Créer une tâche de base → action « Démarrer un programme » avec `python.exe` et les arguments `rapport.py C:\chemin\export.csv --envoyer`.
