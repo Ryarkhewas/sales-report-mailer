@@ -1,5 +1,7 @@
 # sales-report-mailer
 
+[![Tests](https://github.com/Ryarkhewas/sales-report-mailer/actions/workflows/tests.yml/badge.svg)](https://github.com/Ryarkhewas/sales-report-mailer/actions/workflows/tests.yml)
+
 **Turn a CSV sales export into a presentation-ready Excel report, and email it automatically.**
 
 Many small businesses spend half a day every month copying exports into Excel, adding totals and charts, then emailing the result. This script does all three in a single command, and can run on its own every week or every month.
@@ -77,6 +79,8 @@ python -m pytest -q
 ```
 
 The tests cover loading (formats, date parsing, invalid rows, missing columns), calculations, Excel generation, email building and the command line.
+
+They run automatically with GitHub Actions on every push, on Python 3.10 to 3.13, and the workflow also builds the sample report to make sure the whole pipeline works.
 
 ## Security
 
