@@ -1,18 +1,20 @@
 # sales-report-mailer
 
-**Transforme un export CSV de ventes en rapport Excel prêt à présenter, et l'envoie par email automatiquement.**
+**Turn a CSV sales export into a presentation-ready Excel report, and email it automatically.**
 
-Beaucoup de petites entreprises passent une demi-journée par mois à copier-coller leurs exports dans Excel, faire des totaux et des graphiques, puis envoyer le tout par mail. Ce script fait les trois en une commande, et peut tourner tout seul chaque semaine ou chaque mois.
+Many small businesses spend half a day every month copying exports into Excel, adding totals and charts, then emailing the result. This script does all three in a single command, and can run on its own every week or every month.
 
-## Ce que fait le script
+![Report preview](docs/preview.png)
 
-1. **Lit un export CSV** (séparateur `;` ou `,`, décimales à la française acceptées) et ignore proprement les lignes invalides.
-2. **Calcule les indicateurs clés** : chiffre d'affaires, nombre de ventes, clients distincts, panier moyen, évolution mensuelle, répartition par produit, top clients.
-3. **Génère un fichier Excel mis en forme** :
-   - une feuille *Synthèse* avec les indicateurs, les tableaux et deux graphiques ;
-   - une feuille *Détail des ventes* avec filtres et en-tête figé ;
-   - une mise en page prête à imprimer (A4, ajusté en largeur).
-4. **Envoie le rapport par email** (optionnel) avec un résumé dans le corps du message et l'Excel en pièce jointe.
+## What it does
+
+1. **Reads a CSV export** (`,` or `;` separator, decimal commas accepted) and cleanly skips invalid rows.
+2. **Computes the key figures**: revenue, number of sales, unique customers, average order, monthly trend, breakdown by product, top customers.
+3. **Builds a formatted Excel workbook**:
+   - a *Summary* sheet with key figures, tables and two charts;
+   - a *Sales detail* sheet with filters and a frozen header row;
+   - a print-ready layout (A4, fitted to page width).
+4. **Emails the report** (optional), with a summary in the message body and the Excel file attached.
 
 ## Installation
 
@@ -20,53 +22,53 @@ Beaucoup de petites entreprises passent une demi-journée par mois à copier-col
 git clone https://github.com/Ryarkhewas/sales-report-mailer.git
 cd sales-report-mailer
 python -m venv .venv
-source .venv/bin/activate      # Windows : .venv\Scripts\activate
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Utilisation
+## Usage
 
 ```bash
-# Générer le rapport à partir des données d'exemple
-python rapport.py data/ventes_exemple.csv
+# Build the report from the sample data
+python sales_report.py data/sample_sales.csv
 
-# Choisir le fichier de sortie et le titre
-python rapport.py data/ventes_exemple.csv -o rapports/septembre.xlsx -t "Ventes de septembre"
+# Choose the output file and the title
+python sales_report.py data/sample_sales.csv -o reports/september.xlsx -t "September sales"
 
-# Préparer l'email sans l'envoyer (pour vérifier)
-python rapport.py data/ventes_exemple.csv --envoyer --dry-run
+# Build the email without sending it (to check it first)
+python sales_report.py data/sample_sales.csv --send --dry-run
 
-# Générer et envoyer
-python rapport.py data/ventes_exemple.csv --envoyer
+# Build and send
+python sales_report.py data/sample_sales.csv --send
 ```
 
-## Format du CSV attendu
+## Expected CSV format
 
-| date       | client          | produit               | quantite | prix_unitaire |
-|------------|-----------------|-----------------------|----------|---------------|
-| 01/04/2026 | Café des Arts   | Support à distance    | 3        | 45,00         |
+| date       | customer   | product        | quantity | unit_price |
+|------------|------------|----------------|----------|------------|
+| 2026-04-01 | Arts Cafe  | Remote support | 3        | 45.00      |
 
-Les colonnes supplémentaires sont ignorées. Les dates au format `JJ/MM/AAAA` ou `AAAA-MM-JJ` sont acceptées.
+Extra columns are ignored. Dates can be ISO (`2026-04-01`) or day-first (`01/04/2026`, as in European exports). ISO dates are never reinterpreted, so day and month cannot be swapped.
 
-## Configuration de l'envoi d'email
+## Email settings
 
-Copiez `.env.example` en `.env` et renseignez vos paramètres SMTP :
+Copy `.env.example` to `.env` and fill in your SMTP settings:
 
 ```bash
 cp .env.example .env
 ```
 
-Avec Gmail, utilisez un **mot de passe d'application** (Compte Google → Sécurité → Validation en deux étapes → Mots de passe des applications), jamais votre mot de passe principal. Le fichier `.env` est exclu de Git.
+With Gmail, use an **app password** (Google Account → Security → 2-Step Verification → App passwords), never your main password. The `.env` file is excluded from Git.
 
-## Automatiser l'exécution
+## Scheduling
 
-**Linux / macOS (cron)** — chaque 1er du mois à 8 h :
+**Linux / macOS (cron)**, on the 1st of every month at 8 am:
 
 ```cron
-0 8 1 * * cd /chemin/vers/sales-report-mailer && .venv/bin/python rapport.py /chemin/export.csv --envoyer
+0 8 1 * * cd /path/to/sales-report-mailer && .venv/bin/python sales_report.py /path/to/export.csv --send
 ```
 
-**Windows** : Planificateur de tâches → Créer une tâche de base → action « Démarrer un programme » avec `python.exe` et les arguments `rapport.py C:\chemin\export.csv --envoyer`.
+**Windows**: Task Scheduler → Create Basic Task → "Start a program" with `python.exe` and the arguments `sales_report.py C:\path\to\export.csv --send`.
 
 ## Tests
 
@@ -74,18 +76,18 @@ Avec Gmail, utilisez un **mot de passe d'application** (Compte Google → Sécur
 python -m pytest -q
 ```
 
-Les tests couvrent le chargement (formats, lignes invalides, colonnes manquantes), les calculs, la génération Excel, la construction de l'email et la ligne de commande.
+The tests cover loading (formats, date parsing, invalid rows, missing columns), calculations, Excel generation, email building and the command line.
 
-## Sécurité
+## Security
 
-- Les identifiants SMTP sont lus depuis l'environnement, jamais écrits dans le code.
-- Connexion SMTP chiffrée (STARTTLS sur le port 587, SSL sur le 465).
-- Les données d'exemple sont fictives.
+- SMTP credentials are read from the environment, never written in the code.
+- Encrypted SMTP connection (STARTTLS on port 587, SSL on port 465).
+- The sample data is fictitious.
 
-## Adapter à votre besoin
+## Adapting it
 
-Le script est volontairement simple à modifier : autres colonnes, autres indicateurs, export PDF, envoi vers Teams ou Slack, lecture directe depuis une base de données ou une API… [Contactez-moi](https://github.com/Ryarkhewas) pour une version sur mesure.
+The script is deliberately easy to modify: other columns, other metrics, PDF export, sending to Teams or Slack, reading directly from a database or an API. [Get in touch](https://github.com/Ryarkhewas) for a custom version.
 
-## Licence
+## License
 
 MIT

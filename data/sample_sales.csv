@@ -1,0 +1,161 @@
+date,customer,product,quantity,unit_price
+2026-04-01,Rose & Co Florist,Automation script,1,320.00
+2026-04-02,Arts Cafe,Remote support,3,45.00
+2026-04-02,Rose & Co Florist,Monthly maintenance,1,89.00
+2026-04-03,Bookmark Bookshop,Monthly maintenance,2,89.00
+2026-04-03,StyleCut Hair Salon,2-hour training,1,180.00
+2026-04-08,Arts Cafe,2-hour training,1,180.00
+2026-04-09,Central Pharmacy,Remote support,4,45.00
+2026-04-10,Arts Cafe,Remote support,2,45.00
+2026-04-10,Rose & Co Florist,Remote support,2,45.00
+2026-04-12,Central Pharmacy,Monthly maintenance,2,89.00
+2026-04-15,Bookmark Bookshop,Monthly maintenance,4,89.00
+2026-04-17,StyleCut Hair Salon,2-hour training,1,180.00
+2026-04-17,StyleCut Hair Salon,Security audit,1,450.00
+2026-04-18,Arts Cafe,Cloud backup,2,25.00
+2026-04-18,Dupuis Garage,Remote support,3,45.00
+2026-04-18,Lefevre Law Office,Remote support,2,45.00
+2026-04-20,Central Pharmacy,Remote support,2,45.00
+2026-04-21,Arts Cafe,Monthly maintenance,2,89.00
+2026-04-21,Arts Cafe,Remote support,1,45.00
+2026-04-23,Martin Bakery,Cloud backup,1,25.00
+2026-04-24,Bookmark Bookshop,Security audit,1,450.00
+2026-04-25,Arts Cafe,Cloud backup,3,25.00
+2026-04-26,Bookmark Bookshop,Monthly maintenance,2,89.00
+2026-04-27,Nature Woodworks,Monthly maintenance,1,89.00
+2026-04-28,Nature Woodworks,Cloud backup,3,25.00
+2026-04-29,Lefevre Law Office,Automation script,1,320.00
+2026-04-30,Lefevre Law Office,Remote support,3,45.00
+2026-05-01,StyleCut Hair Salon,Remote support,2,45.00
+2026-05-03,Martin Bakery,Monthly maintenance,3,89.00
+2026-05-05,Dupuis Garage,Automation script,1,320.00
+2026-05-05,Martin Bakery,Remote support,2,45.00
+2026-05-06,Central Pharmacy,2-hour training,1,180.00
+2026-05-08,East Lyon Driving School,Monthly maintenance,2,89.00
+2026-05-10,Lefevre Law Office,Remote support,2,45.00
+2026-05-10,Nature Woodworks,Security audit,1,450.00
+2026-05-10,StyleCut Hair Salon,Cloud backup,4,25.00
+2026-05-12,Bookmark Bookshop,Remote support,4,45.00
+2026-05-12,Rose & Co Florist,2-hour training,1,180.00
+2026-05-13,StyleCut Hair Salon,Remote support,2,45.00
+2026-05-16,Central Pharmacy,Cloud backup,1,25.00
+2026-05-16,Lefevre Law Office,Remote support,1,45.00
+2026-05-20,East Lyon Driving School,Security audit,1,450.00
+2026-05-23,Rose & Co Florist,Cloud backup,3,25.00
+2026-05-24,Central Pharmacy,Remote support,2,45.00
+2026-05-25,Lefevre Law Office,Remote support,1,45.00
+2026-05-25,Rose & Co Florist,Cloud backup,4,25.00
+2026-05-27,Bookmark Bookshop,Remote support,2,45.00
+2026-05-27,East Lyon Driving School,Automation script,1,320.00
+2026-05-27,Martin Bakery,Monthly maintenance,4,89.00
+2026-05-27,Rose & Co Florist,Cloud backup,1,25.00
+2026-05-28,Arts Cafe,Monthly maintenance,2,89.00
+2026-05-28,Bookmark Bookshop,Monthly maintenance,1,89.00
+2026-05-28,StyleCut Hair Salon,Monthly maintenance,1,89.00
+2026-05-31,East Lyon Driving School,Monthly maintenance,4,89.00
+2026-05-31,Rose & Co Florist,Cloud backup,2,25.00
+2026-06-02,Lefevre Law Office,2-hour training,1,180.00
+2026-06-06,Bookmark Bookshop,Remote support,3,45.00
+2026-06-06,Rose & Co Florist,2-hour training,1,180.00
+2026-06-07,Central Pharmacy,2-hour training,1,180.00
+2026-06-07,Dupuis Garage,Monthly maintenance,3,89.00
+2026-06-07,StyleCut Hair Salon,Monthly maintenance,3,89.00
+2026-06-08,Arts Cafe,Monthly maintenance,1,89.00
+2026-06-11,Bookmark Bookshop,Automation script,1,320.00
+2026-06-11,Central Pharmacy,Remote support,4,45.00
+2026-06-11,Lefevre Law Office,Remote support,1,45.00
+2026-06-11,Nature Woodworks,2-hour training,1,180.00
+2026-06-12,Dupuis Garage,Cloud backup,3,25.00
+2026-06-15,Martin Bakery,Security audit,1,450.00
+2026-06-18,Rose & Co Florist,Automation script,1,320.00
+2026-06-20,Central Pharmacy,Cloud backup,1,25.00
+2026-06-20,East Lyon Driving School,Security audit,1,450.00
+2026-06-22,Nature Woodworks,Cloud backup,1,25.00
+2026-06-23,Central Pharmacy,2-hour training,1,180.00
+2026-06-24,Dupuis Garage,Automation script,1,320.00
+2026-06-25,Bookmark Bookshop,Automation script,1,320.00
+2026-06-25,Rose & Co Florist,Remote support,4,45.00
+2026-06-28,East Lyon Driving School,Cloud backup,1,25.00
+2026-07-01,Rose & Co Florist,Security audit,1,450.00
+2026-07-02,Martin Bakery,Cloud backup,1,25.00
+2026-07-05,StyleCut Hair Salon,Remote support,1,45.00
+2026-07-07,Central Pharmacy,Monthly maintenance,4,89.00
+2026-07-11,Lefevre Law Office,Remote support,4,45.00
+2026-07-12,East Lyon Driving School,Remote support,3,45.00
+2026-07-12,Martin Bakery,Cloud backup,3,25.00
+2026-07-13,Rose & Co Florist,Remote support,1,45.00
+2026-07-15,Martin Bakery,2-hour training,1,180.00
+2026-07-16,Arts Cafe,Remote support,2,45.00
+2026-07-16,Bookmark Bookshop,2-hour training,1,180.00
+2026-07-17,East Lyon Driving School,Cloud backup,2,25.00
+2026-07-17,StyleCut Hair Salon,2-hour training,1,180.00
+2026-07-17,StyleCut Hair Salon,Security audit,1,450.00
+2026-07-19,Nature Woodworks,Remote support,4,45.00
+2026-07-20,East Lyon Driving School,Remote support,3,45.00
+2026-07-20,StyleCut Hair Salon,Monthly maintenance,3,89.00
+2026-07-21,Arts Cafe,Cloud backup,1,25.00
+2026-07-22,StyleCut Hair Salon,Remote support,3,45.00
+2026-07-23,Martin Bakery,Remote support,1,45.00
+2026-07-23,Rose & Co Florist,2-hour training,1,180.00
+2026-07-24,East Lyon Driving School,Remote support,4,45.00
+2026-07-26,Arts Cafe,Automation script,1,320.00
+2026-07-26,Bookmark Bookshop,Automation script,1,320.00
+2026-07-26,Bookmark Bookshop,Monthly maintenance,3,89.00
+2026-07-26,Bookmark Bookshop,Monthly maintenance,4,89.00
+2026-07-27,Dupuis Garage,Automation script,1,320.00
+2026-07-27,Rose & Co Florist,Automation script,1,320.00
+2026-07-28,Bookmark Bookshop,2-hour training,1,180.00
+2026-07-28,Dupuis Garage,Automation script,1,320.00
+2026-07-29,Dupuis Garage,Cloud backup,1,25.00
+2026-07-29,Rose & Co Florist,2-hour training,1,180.00
+2026-07-31,Dupuis Garage,Remote support,2,45.00
+2026-08-03,East Lyon Driving School,Cloud backup,3,25.00
+2026-08-05,Dupuis Garage,Monthly maintenance,1,89.00
+2026-08-05,Lefevre Law Office,2-hour training,1,180.00
+2026-08-08,Arts Cafe,Automation script,1,320.00
+2026-08-08,Bookmark Bookshop,2-hour training,1,180.00
+2026-08-08,Dupuis Garage,Cloud backup,1,25.00
+2026-08-09,Dupuis Garage,Cloud backup,2,25.00
+2026-08-10,East Lyon Driving School,Automation script,1,320.00
+2026-08-11,Rose & Co Florist,2-hour training,1,180.00
+2026-08-14,Lefevre Law Office,Monthly maintenance,1,89.00
+2026-08-14,Rose & Co Florist,Remote support,4,45.00
+2026-08-15,StyleCut Hair Salon,Monthly maintenance,4,89.00
+2026-08-16,Dupuis Garage,Monthly maintenance,4,89.00
+2026-08-16,Nature Woodworks,Cloud backup,2,25.00
+2026-08-17,Central Pharmacy,Remote support,2,45.00
+2026-08-20,Arts Cafe,Monthly maintenance,4,89.00
+2026-08-20,Rose & Co Florist,Security audit,1,450.00
+2026-08-20,StyleCut Hair Salon,Automation script,1,320.00
+2026-08-20,StyleCut Hair Salon,Monthly maintenance,3,89.00
+2026-08-21,Dupuis Garage,Automation script,1,320.00
+2026-08-22,StyleCut Hair Salon,Cloud backup,4,25.00
+2026-08-23,Arts Cafe,Cloud backup,1,25.00
+2026-08-24,Bookmark Bookshop,Automation script,1,320.00
+2026-08-24,East Lyon Driving School,Remote support,1,45.00
+2026-08-26,Martin Bakery,Security audit,1,450.00
+2026-08-27,Martin Bakery,Remote support,3,45.00
+2026-08-27,Nature Woodworks,Remote support,1,45.00
+2026-08-31,Arts Cafe,Monthly maintenance,1,89.00
+2026-09-02,Bookmark Bookshop,Monthly maintenance,2,89.00
+2026-09-03,Lefevre Law Office,Cloud backup,2,25.00
+2026-09-04,East Lyon Driving School,Remote support,1,45.00
+2026-09-10,Central Pharmacy,2-hour training,1,180.00
+2026-09-11,Lefevre Law Office,Cloud backup,2,25.00
+2026-09-11,Rose & Co Florist,Monthly maintenance,3,89.00
+2026-09-14,Dupuis Garage,Remote support,1,45.00
+2026-09-15,Arts Cafe,Cloud backup,1,25.00
+2026-09-15,Dupuis Garage,Cloud backup,3,25.00
+2026-09-16,Central Pharmacy,Cloud backup,2,25.00
+2026-09-16,Central Pharmacy,Cloud backup,3,25.00
+2026-09-17,Central Pharmacy,Security audit,1,450.00
+2026-09-17,Rose & Co Florist,Remote support,2,45.00
+2026-09-18,StyleCut Hair Salon,Monthly maintenance,4,89.00
+2026-09-19,Dupuis Garage,Automation script,1,320.00
+2026-09-20,Martin Bakery,Cloud backup,1,25.00
+2026-09-21,StyleCut Hair Salon,Remote support,2,45.00
+2026-09-22,Nature Woodworks,Remote support,3,45.00
+2026-09-25,Dupuis Garage,Monthly maintenance,2,89.00
+2026-09-26,Central Pharmacy,2-hour training,1,180.00
+2026-09-26,East Lyon Driving School,Monthly maintenance,4,89.00
+2026-09-29,Bookmark Bookshop,2-hour training,1,180.00
